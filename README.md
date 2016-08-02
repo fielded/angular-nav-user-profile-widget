@@ -2,8 +2,8 @@
 
 [![Build Status][travis-image]][travis-url]
 
-[travis-url]: https://travis-ci.org/fielded/nav-integrated-state-user-profile-widget
-[travis-image]: https://travis-ci.org/fielded/nav-integrated-state-user-profile-widget.svg
+[travis-url]: https://travis-ci.org/fielded/angular-nav-user-profile-widget
+[travis-image]: https://img.shields.io/travis/fielded/angular-nav-user-profile-widget.svg
 
 > User profile widget components for NAV applications
 
