@@ -1,9 +1,12 @@
 # angular-nav-user-profile-widget
 
 [![Build Status][travis-image]][travis-url]
+[![semantic-release][semantic-release-image]][semantic-release-url]
 
 [travis-url]: https://travis-ci.org/fielded/angular-nav-user-profile-widget
 [travis-image]: https://img.shields.io/travis/fielded/angular-nav-user-profile-widget.svg
+[semantic-release-url]: https://github.com/semantic-release/semantic-release
+[semantic-release-image]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg
 
 > User profile widget components for NAV applications
 
