@@ -1,0 +1,35 @@
+<div
+  ng-if="$ctrl.uploading"
+  class="photo"
+>
+  <i
+    class="fa fa-spinner fa-spin fa-3x"
+  ></i>
+</div>
+
+<div
+  class="photo"
+  ng-mouseover="$ctrl.hideCaption = false"
+  ng-mouseleave="$ctrl.hideCaption = true"
+  ng-if="!$ctrl.uploading"
+>
+  <div
+    ng-class="{
+      'hidden': $ctrl.hideCaption,
+      'caption': !$ctrl.hideCaption
+    }"
+    s3
+    options="$ctrl.s3Options"
+    ng-model="$ctrl.files"
+  >
+    <span>Change</span>
+  </div>
+  <img
+    class="img-circle clickable"
+    alt="User profile picture"
+    ng-src="{{$ctrl.photo}}"
+    fb-src="assets/images/user.png"
+    width="80"
+    height="80"
+  >
+</div>

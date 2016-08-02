@@ -1,0 +1,25 @@
+{
+  "name": "angular-nav-user-profile-widget",
+  "description": "Login components for NAV applications",
+  "main": [
+    "dist/bundle.js",
+    "dist/bundle.scss"
+  ],
+  "authors": [
+    "Tom Vincent <git@tlvince.com>"
+  ],
+  "dependencies": {
+    "angular-aws-s3-upload": "tlvince/angular-aws-s3-upload#baceb43b5dbfde06a32e2bc1c6a5d1b6369df05e",
+    "angular-fallback-src": "0.1.4",
+    "angular-messages": "1.5.8"
+  },
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/fielded/angular-nav-user-profile-widget",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

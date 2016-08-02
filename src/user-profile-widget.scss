@@ -1,0 +1,24 @@
+user-profile-widget {
+  a, a:hover, a:focus {
+    color: white;
+    text-decoration: none;
+  }
+  .user-profile-widget-popover {
+    padding: 0;
+    min-width: 350px;
+    color: initial;
+    li {
+      margin: 0 !important;
+      line-height: $line-height-base !important;
+      .profile {
+        padding: 20px;
+      }
+      .well {
+        border: none;
+        border-top: 1px solid #e3e3e3;
+        padding: 8px;
+        margin-bottom: 0;
+      }
+    }
+  }
+}

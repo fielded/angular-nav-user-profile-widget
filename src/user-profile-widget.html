@@ -1,0 +1,64 @@
+<span
+  uib-dropdown
+  auto-close="outsideClick"
+>
+  <a
+    id="user-profile-widget-dropdown"
+    class="clickable"
+    uib-dropdown-toggle
+  >
+    <img
+      class="img-circle"
+      alt="User profile picture"
+      ng-src="{{$ctrl.photo}}"
+      fb-src="assets/images/user.png"
+      width="50"
+      height="50"
+    >
+    <i
+      class="fa fa-caret-down"
+      aria-hidden="true"
+      title="Toggle dropdown menu"
+    ></i>
+  </a>
+  <ul
+    class="dropdown-menu user-profile-widget-popover"
+    uib-dropdown-menu
+    aria-labelledby="user-profile-widget-dropdown"
+  >
+    <li>
+      <div class="row profile">
+        <div class="col-sm-4">
+          <p class="text-center">
+            <form name="profilePicture">
+              <profile-picture
+                session="$ctrl.session"
+              ></profile-picture>
+            </form>
+          </p>
+        </div>
+        <div class="col-sm-8">
+          <p>
+            <strong
+              ng-bind="::$ctrl.session.fullName"
+            ></strong>
+          </p>
+          <p
+            ng-bind="::$ctrl.session.email"
+          ></p>
+          <div ng-messages="profilePicture.$error" class="text-danger">
+            <div ng-messages-include="profile-picture-error-messages.html"></div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="well clearfix">
+        <a
+          class="btn btn-default pull-right clickable"
+          ng-click="$ctrl.logout()"
+        >Logout</a>
+      </div>
+    </li>
+  </ul>
+</span>
