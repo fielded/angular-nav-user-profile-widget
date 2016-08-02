@@ -1,8 +1,8 @@
 import babel from 'rollup-plugin-babel'
 import string from 'rollup-plugin-string'
+import uglify from 'rollup-plugin-uglify'
 import commonjs from 'rollup-plugin-commonjs'
 import nodeResolve from 'rollup-plugin-node-resolve'
-// import uglify from 'rollup-plugin-uglify'
 
 export default {
   entry: 'src/index.js',
@@ -16,7 +16,7 @@ export default {
     babel({
       exclude: ['node_modules/**']
     }),
-    // uglify(),
+    uglify(),
     nodeResolve({
       main: true,
       jsnext: true,

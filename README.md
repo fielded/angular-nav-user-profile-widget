@@ -2,8 +2,8 @@
 
 [![Build Status][travis-image]][travis-url]
 
-[travis-url]: https://travis-ci.com/fielded/nav-integrated-state-user-profile-widget
-[travis-image]: https://travis-ci.com/fielded/nav-integrated-state-user-profile-widget.svg
+[travis-url]: https://travis-ci.org/fielded/nav-integrated-state-user-profile-widget
+[travis-image]: https://travis-ci.org/fielded/nav-integrated-state-user-profile-widget.svg
 
 > User profile widget components for NAV applications
 
@@ -69,7 +69,10 @@ npm test
 
 ## Release Process
 
-To make a release, you need to run `npm run build`, commit the `dist` folder and tag the commit with an appropiate version according to the [SemVer spec](http://semver.org/).
+This project uses [semantic-release][] following the AngularJS commit message
+format.
+
+[semantic-release]: https://github.com/semantic-release/semantic-release
 
 ## License
 
